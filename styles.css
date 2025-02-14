@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #d877ac; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    flex-direction: column;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valentine-image {
+    max-width: 60%;
+    height: auto; 
+}
+
+button {
+    padding: 10px 20px; 
+    font-size: 18px; 
+    cursor: pointer;
+    background-color: #e7a3c9; /* Red button color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px #c00173; /* Depth effect */
+    margin-top: 20px; 
+    transition: box-shadow 0.3s ease;
+}
+
+button:active {
+    box-shadow: 0 2px #c40000; 
+    transform: translateY(2px);
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#popup-content {
+    background: #ffffff; 
+    color: black; 
+    width: 350px; 
+    padding: 20px; 
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#flowerButton {
+    padding: 10px 0; /* Ensure padding only on top and bottom */
+    font-size: 24px; 
+    cursor: pointer;
+    background: none; 
+    color: black; 
+    border: 3px solid #c40000; 
+    border-radius: 15px 15px 15px 15px; /* Rounded corners only on the bottom */
+    margin-top: 20px; 
+    display: block;
+    width: 80%; /* Make the button take the full width of the pop-up */
+    box-shadow: none; 
+}
+
+#flowerButton:active {
+    box-shadow: none; 
+    transform: translateY(2px);
+}
+
+
+
+.flower-image {
+    max-width: 30%; 
+    height: auto; 
+}
+
+#afterPopup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; 
+    width: 100%;
+    height: 100vh; 
+    justify-content: center;
+}
